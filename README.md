@@ -74,6 +74,9 @@ BANPHRASES_IGNORE_SPACES=boolean # [OPTIONAL] If to make ban phrases checker ign
 # Discord Webhooks
 DISCORD_WEBHOOK_URL=foo         # [OPTIONAL] URL of Webhook, found on Server Settings → Webhooks, if not defined then Discord Webhooks it's disabled
 DISCORD_WEBHOOK_INTERVAL=number # [OPTIONAL] Number of millisecond in which to send the logs. Default is 1000
+
+# Emote Only Flags
+EMOTES_ONLY=bool #[OPTIONAL] sets emote only mode, Defaults to false
 ```
 
 After doing all this you can just run ```node dubbot.js``` in your friendly neighborhood node terminal and all should be fine and dandy.
