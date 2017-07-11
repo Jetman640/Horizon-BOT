@@ -947,7 +947,7 @@ function regCommands(commandManager) {
                 utils.BOT.sendChat(utils.getTargetName() + ' Songs you can\'t or shouldn\'t play: https://git.io/vHDjH');
             }
         ),
-		new Command('emotesonlymode',['toggleemotesonly','emotesonly'],1,['mod'],[],
+		new Command('emotesonlymode',['toggleemotesonly','emotesonly'],0,['mod'],[],
 			function(utils){
 				if(utils.settingsManager.getEmoteOnlyMode())
 				{
@@ -959,14 +959,6 @@ function regCommands(commandManager) {
 					utils.BOT.sendChat("Emotes Only Mode On");
 					var enableAbsoluteEmotes = utils.getCommandArguments()[0];
 					
-					if(enableAbsoluteEmotes === 'absolute')
-					{
-						utils.settingsManager.setEmoteAbsolute(true);
-					}
-					else
-					{
-						utils.settingsManager.setEmoteAbsolute(false);
-					}
 					utils.settingsManager.setEmoteOnlyMode(true);
 				}
 			}
